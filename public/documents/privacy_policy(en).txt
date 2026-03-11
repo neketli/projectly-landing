@@ -1,0 +1,45 @@
+Privacy Policy of the Projectly Platform
+
+Effective Date: March 01, 2025
+
+Operator: Li Nikita Sergeevich, an individual registered in the Russian Federation
+1. General Provisions
+
+1.1. The Projectly Platform is an open-source SaaS service for project and task management, available at projectly.ru.
+
+1.2. Use of the Platform signifies consent to this Policy. By registering, the user consents to data processing.
+
+1.3. The Operator may amend the Policy, notifying users via the website or email.
+2. Collection of Personal Data
+
+2.1. The Operator collects: first name, last name, age, email address, avatar (if provided).
+
+2.2. Data is provided voluntarily during registration or use. Users confirm they are over 18.
+
+2.3. Authentication via Google and GitHub OAuth transfers data to these services per their policies.
+
+2.4. Cookies are used for analytics and functionality. Users may disable them in browser settings.
+3. Purpose and Transfer of Data
+
+3.1. Data is processed for registration, service provision, analytics, and support.
+
+3.2. Analytics data is transferred to Yandex.Metrika and Google Analytics, with potential cross-border transfer to the USA and other countries. Users consent to this upon registration.
+
+3.3. No other third-party data transfers occur.
+4. Storage and Protection
+
+4.1. Data is stored on servers in Russia with encryption, retained during account activity or for 3 years from last activity unless specified otherwise.
+
+4.2. The Operator takes protective measures but does not guarantee data safety against failures or unlawful acts.
+5. User Rights
+
+5.1. Users may request access, correction, deletion, or restriction of data processing via neketli.dev@gmail.com.
+
+5.2. Upon account deletion, data is retained for 14 days, then deleted, except for content, which may remain.
+
+5.3. The Operator may delete data for terms violations.
+6. Final Provisions
+
+6.1. This Policy is governed by Russian law. Disputes are resolved in the court at the Operator’s residence.
+
+Contact Information: neketli.dev@gmail.com

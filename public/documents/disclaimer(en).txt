@@ -1,0 +1,24 @@
+Disclaimer of Liability and Warranties of the Projectly Platform
+
+Effective Date: March 01, 2025
+
+1. Disclaimer of Warranties
+
+1.1. The Platform is provided "as is." The Operator does not guarantee uninterrupted
+    service or data preservation.
+
+1.2. Users must back up their content.
+2. Limitation of Liability
+
+2.1. The Operator is not liable for damages, including third-party service failures,
+    except as required by Russian law.
+
+2.2. Upon account deletion, data is retained for 14 days, then may be deleted or kept.
+3. Amendments
+
+3.1. The Operator may amend rules, notifying users via the website.
+4. Dispute Resolution
+
+4.1. Disputes are resolved in the court at the Operator's residence under Russian law.
+
+Contact Information: neketli.dev@gmail.com

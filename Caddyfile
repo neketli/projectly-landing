@@ -1,0 +1,20 @@
+{
+    admin off
+    email neketli.dev@gmai.com
+}
+
+projectly.ru {
+    reverse_proxy /api/* projectly_app:4242
+    reverse_proxy /media/* projectly_app:4242
+    reverse_proxy /my/* projectly_app:4242
+    reverse_proxy /my/_nuxt/* projectly_app:4242
+    reverse_proxy /* projectly_landing:3000
+}
+
+www.projectly.ru {
+    reverse_proxy /api/* projectly_app:4242
+    reverse_proxy /media/* projectly_app:4242
+    reverse_proxy /my/* projectly_app:4242
+    reverse_proxy /my/_nuxt/* projectly_app:4242
+    reverse_proxy /* projectly_landing:3000
+}

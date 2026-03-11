@@ -1,0 +1,46 @@
+name: projectly_landing
+
+services:
+  landing:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: projectly_landing
+    hostname: projectly_landing
+    restart: unless-stopped
+    networks:
+      - projectly_network
+    expose:
+      - "3000"
+    env_file:
+      - .env
+    environment:
+      - HOST=0.0.0.0
+      - PORT=3000
+      - NODE_ENV=production
+
+  caddy:
+    image: caddy:2-alpine
+    container_name: projectly_caddy
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    networks:
+      - projectly_network
+    extra_hosts:
+      - "projectly_app:host-gateway"
+    depends_on:
+      - landing
+
+networks:
+  projectly_network:
+    driver: bridge
+
+volumes:
+  caddy_data:
+  caddy_config:
