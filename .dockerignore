@@ -12,3 +12,4 @@ docker-compose.yml
 Caddyfile
 .env
 .env.example
+.github

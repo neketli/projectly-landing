@@ -1,0 +1,51 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  checks: write
+  packages: write
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Build and Publish to Github Container Registry
+        uses: elgohr/Publish-Docker-Github-Action@master
+        with:
+          name: neketli/projectly-landing
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+          dockerfile: ./Dockerfile
+          tags: latest
+
+  deploy:
+    needs: [build]
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy on VPS
+        uses: appleboy/ssh-action@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          host: ${{ secrets.HOST_NAME }}
+          username: ${{ secrets.HOST_USER }}
+          password: ${{ secrets.HOST_PASSWORD }}
+          key: ${{ secrets.HOST_KEY }}
+          envs: GITHUB_TOKEN
+          script: |
+            cd /opt/projectly-landing
+            git pull origin main
+            docker compose up --pull=always --quiet-pull --build --force-recreate -d
+            docker system prune -f
