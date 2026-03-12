@@ -1,15 +1,11 @@
 # Projectly Landing
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
-[![Nuxt 3](https://img.shields.io/badge/Nuxt-3.13+-00DC82?logo=nuxt.js)](https://nuxt.com/)
+[![Nuxt 3](https://img.shields.io/badge/Nuxt-3.13+-00DC82?logo=nuxt)](https://nuxt.com/)
 [![Vue.js](https://img.shields.io/badge/Vue.js-3.5+-4FC08D?logo=vue.js)](https://vuejs.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4+-38B2AC?logo=tailwind-css)](https://tailwindcss.com/)
 
 Landing page for **Projectly** — a modern project management system for teams.
-
-## 🌐 Live
-
-[https://projectly.ru](https://projectly.ru)
 
 ## ✨ Features
 
