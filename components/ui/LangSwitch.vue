@@ -6,7 +6,7 @@
         <button
             :class="{
                 'text-gray-600 cursor-default': $i18n.locale === 'ru',
-                'text-primary-600 transition hover:text-primary-700 cursor-pointer': $i18n.locale !== 'ru',
+                'text-blue-600 transition hover:text-blue-700 cursor-pointer': $i18n.locale !== 'ru',
             }"
             @click="$i18n.setLocale('ru')"
         >
@@ -18,7 +18,7 @@
         <button
             :class="{
                 'text-gray-600 cursor-default': $i18n.locale === 'en',
-                'text-primary-600 transition hover:text-primary-700 cursor-pointer': $i18n.locale !== 'en',
+                'text-blue-600 transition hover:text-blue-700 cursor-pointer': $i18n.locale !== 'en',
             }"
             @click="$i18n.setLocale('en')"
         >

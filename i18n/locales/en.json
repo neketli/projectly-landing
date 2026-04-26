@@ -4,7 +4,7 @@
     "description": "Projectly helps teams collaborate, track tasks, and complete projects efficiently with interactive Kanban boards."
   },
   "hero": {
-    "title": "Your <span class=\"text-primary-600\">Perfect</span> Project Management Tool",
+    "title": "Your <span class=\"text-blue-600\">Perfect</span> Project Management Tool",
     "subtitle": "Projectly helps teams collaborate, track tasks, and complete projects efficiently",
     "button": "Get Started Now"
   },

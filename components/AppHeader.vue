@@ -35,20 +35,20 @@
                 <div class="hidden lg:block ml-4 space-x-4">
                     <a
                         href="https://projectly.ru/my/auth/login"
-                        class="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-primary-600 hover:bg-gray-100 transition-all"
+                        class="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-blue-600 hover:bg-gray-100 transition-all"
                     >
                         {{ $t('header.login') }}
                     </a>
                     <a
                         href="https://projectly.ru/my/auth/register"
-                        class="inline-block bg-primary-600 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-primary-700 transition-all"
+                        class="inline-block bg-blue-600 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-blue-700 transition-all"
                     >
                         {{ $t('header.register') }}
                     </a>
                 </div>
 
                 <button
-                    class="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500  transition-all"
+                    class="lg:hidden inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500  transition-all"
                     @click="menu = !menu"
                 >
                     <Icon
@@ -73,13 +73,13 @@
                     <div class="py-4 flex flex-wrap justify-center gap-4">
                         <a
                             href="https://projectly.ru/my/auth/login"
-                            class="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-primary-600 hover:bg-gray-100 transition-all"
+                            class="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-blue-600 hover:bg-gray-100 transition-all"
                         >
                             {{ $t('header.login') }}
                         </a>
                         <a
                             href="https://projectly.ru/my/auth/register"
-                            class="inline-block bg-primary-600 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-primary-700 transition-all"
+                            class="inline-block bg-blue-600 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-blue-700 transition-all"
                         >
                             {{ $t('header.register') }}
                         </a>

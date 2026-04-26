@@ -5,7 +5,7 @@
     >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
-                <h2 class="text-base text-primary-600 font-semibold tracking-wide uppercase">
+                <h2 class="text-base text-blue-600 font-semibold tracking-wide uppercase">
                     {{ $t('features.section') }}
                 </h2>
                 <h3 class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl">
@@ -28,7 +28,7 @@
                         >
                             <dt>
                                 <div
-                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white shadow-md"
+                                    class="absolute flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white shadow-md"
                                     @mouseover="currentIcon = feature.key"
                                     @mouseleave="currentIcon = ''"
                                 >

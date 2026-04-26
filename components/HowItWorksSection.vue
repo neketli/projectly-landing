@@ -6,7 +6,7 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
                 <h2
-                    class="text-base font-semibold text-primary-600 tracking-wide uppercase"
+                    class="text-base font-semibold text-blue-600 tracking-wide uppercase"
                 >
                     {{ $t("how_it_works.section") }}
                 </h2>
@@ -39,7 +39,7 @@
                                 class="relative "
                             >
                                 <div
-                                    class="relative flex items-center justify-center h-12 w-12 rounded-md bg-primary-500 text-white mx-auto shadow-md"
+                                    class="relative flex items-center justify-center h-12 w-12 rounded-md bg-blue-500 text-white mx-auto shadow-md"
                                 >
                                     {{ index + 1 }}
                                 </div>

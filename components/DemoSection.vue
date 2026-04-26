@@ -6,7 +6,7 @@
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="relative">
                 <div class="text-center">
-                    <h2 class="text-base font-semibold text-primary-600 tracking-wide uppercase">
+                    <h2 class="text-base font-semibold text-blue-600 tracking-wide uppercase">
                         {{ $t('demo.title') }}
                     </h2>
                     <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">

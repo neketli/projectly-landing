@@ -1,13 +1,13 @@
 <template>
     <section
         id="contact"
-        class="bg-primary-700 py-16"
+        class="bg-blue-700 py-16"
     >
         <div class="max-w-2xl mx-auto text-center px-4">
             <h3 class="text-3xl font-extrabold text-white sm:text-4xl">
                 {{ $t('contact.title') }}
             </h3>
-            <p class="mt-4 text-lg leading-6 text-primary-200">
+            <p class="mt-4 text-lg leading-6 text-blue-200">
                 {{ $t('contact.subtitle') }}
             </p>
         </div>
@@ -22,7 +22,7 @@
                     v-model="email"
                     required
                     placeholder="example@domain.org"
-                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500"
+                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                     type="email"
                 >
             </label>
@@ -30,12 +30,12 @@
                 <span class="text-white text-lg">{{ $t('contact.message') }}</span>
                 <textarea
                     v-model="message"
-                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-primary-500 focus:border-primary-500"
+                    class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500"
                 />
             </label>
             <div class="w-full flex flex-col justify-center items-center">
                 <button
-                    class="bg-white px-4 py-2 mx-auto rounded-md shadow-sm text-primary-600 text-lg font-medium focus:outline-none focus:ring-2 focus:ring-white hover:shadow-lg transition-all"
+                    class="bg-white px-4 py-2 mx-auto rounded-md shadow-sm text-blue-600 text-lg font-medium focus:outline-none focus:ring-2 focus:ring-white hover:shadow-lg transition-all"
                     type="submit"
                 >
                     {{ $t('contact.button') }}

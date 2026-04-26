@@ -5,7 +5,7 @@
     >
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center">
-                <h2 class="text-base font-semibold text-primary-600 tracking-wide uppercase">
+                <h2 class="text-base font-semibold text-blue-600 tracking-wide uppercase">
                     {{ $t('pricing.section') }}
                 </h2>
                 <p class="mt-1 text-4xl font-extrabold text-gray-900 sm:text-5xl sm:tracking-tight">
@@ -29,13 +29,13 @@
                         <p class="mt-4 text-sm text-gray-500">
                             {{ tier.description }}
                         </p>
-                        <p class="mt-2 text-sm text-primary-500">
+                        <p class="mt-2 text-sm text-blue-500">
                             {{ tier.price }}
                         </p>
 
                         <a
                             :href="tier.href"
-                            class="mt-6 block w-full bg-primary-600 border border-transparent rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-primary-700 transition-all"
+                            class="mt-6 block w-full bg-blue-600 border border-transparent rounded-md py-2 text-sm font-semibold text-white text-center hover:bg-blue-700 transition-all"
                         >
                             {{ tier.cta }}
                         </a>
@@ -52,7 +52,7 @@
                             >
                                 <Icon
                                     name="mdi:check"
-                                    class="h-5 w-5 flex-shrink-0 text-primary-500"
+                                    class="h-5 w-5 flex-shrink-0 text-blue-500"
                                     aria-hidden="true"
                                 />
                                 <span class="text-sm text-gray-500">{{ feature }}</span>
