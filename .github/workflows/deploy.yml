@@ -17,15 +17,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Build and Publish to Github Container Registry
-        uses: elgohr/Publish-Docker-Github-Action@master
+      - name: Login to GHCR
+        uses: docker/login-action@v3
         with:
-          name: neketli/projectly-landing
           registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-          dockerfile: ./Dockerfile
-          tags: latest
+
+      - name: Build and Push
+        uses: docker/build-push-action@v5
+        with:
+          context: .
+          push: true
+          tags: neketli/projectly-landing:latest
 
   deploy:
     needs: [build]

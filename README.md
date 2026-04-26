@@ -100,7 +100,8 @@ projectly_landing
 ├─ nuxt.config.ts       # Nuxt configuration
 ├─ tailwind.config.js   # Tailwind CSS configuration
 ├─ package.json         # Project dependencies
-└─ Dockerfile           # Docker containerization
+├─ Dockerfile           # Docker containerization
+└─ Caddyfile            # Caddy web server
 ```
 
 ## 🐳 Docker
