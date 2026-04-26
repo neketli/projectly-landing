@@ -1,7 +1,7 @@
 <template>
     <section
         id="contact"
-        class="bg-blue-500 py-16"
+        class="bg-blue-600 py-16"
     >
         <div class="max-w-2xl mx-auto text-center px-4">
             <h3 class="text-3xl font-extrabold text-white sm:text-4xl">

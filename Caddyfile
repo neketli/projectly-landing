@@ -13,7 +13,7 @@ projectly.ru {
     }
 
     handle /my/* {
-        reverse_proxy projectly_frontend:3000
+        reverse_proxy projectly_nginx:4242
     }
 
     handle {
@@ -31,7 +31,7 @@ www.projectly.ru {
     }
 
     handle /my/* {
-        reverse_proxy projectly_frontend:3000
+        reverse_proxy projectly_nginx:4242
     }
 
     handle {
