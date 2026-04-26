@@ -16,9 +16,11 @@
                     />
                 </a>
             </div>
-            <p class="mt-4 text-center text-base text-gray-400">
-                {{ $t('footer.copyright', { year: new Date().getFullYear() }) }}
-            </p>
+            <ClientOnly>
+                <p class="mt-4 text-center text-base text-gray-400">
+                    {{ $t('footer.copyright', { year: new Date().getFullYear() }) }}
+                </p>
+            </ClientOnly>
 
             <div class="mt-6 flex gap-4 flex-wrap justify-center items-center">
                 <a
@@ -71,10 +73,10 @@ const social = [
         href: 'https://t.me/projectlyru',
         icon: 'mdi:telegram',
     },
-    {
-        name: 'Telegram support',
-        href: 'https://t.me/projectly_support_bot',
-        icon: 'mdi:face-agent',
-    },
+    // {
+    //     name: 'Telegram support',
+    //     href: 'https://t.me/projectly_support_bot',
+    //     icon: 'mdi:face-agent',
+    // },
 ]
 </script>

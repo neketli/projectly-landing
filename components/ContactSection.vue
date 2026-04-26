@@ -69,7 +69,7 @@ const handleFormSubmit = async () => {
     error.value = null
     success.value = false
     try {
-        const response = await fetch('https://api.projectly.ru/webhook/contact-form', {
+        const response = await fetch('/webhook/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',

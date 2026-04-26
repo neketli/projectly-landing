@@ -9,45 +9,47 @@
                     {{ $t('faq.title') }}
                 </h3>
 
-                <dl class="my-6">
-                    <Disclosure
-                        v-for="(faq, index) in faqs"
-                        :key="faq.question"
-                        v-slot="{ open }"
-                        :default-open="index === 0"
-                        as="dt"
-                        class="border-b rounded border-gray-200 "
-                    >
-                        <DisclosureButton
-                            class="p-4 text-left w-full flex justify-between items-start text-gray-400 transition-all hover:bg-gray-100 rounded"
+                <ClientOnly>
+                    <dl class="my-6">
+                        <Disclosure
+                            v-for="(faq, index) in faqs"
+                            :key="faq.question"
+                            v-slot="{ open }"
+                            :default-open="index === 0"
+                            as="dt"
+                            class="border-b rounded border-gray-200 "
                         >
-                            <span class="font-medium text-gray-900">{{ faq.question }}</span>
-                            <span class="ml-6 h-7 flex items-center">
-                                <Icon
-                                    class="h-6 w-6 transform duration-200"
-                                    :class="open ? '-rotate-90' : 'rotate-90'"
-                                    name="mdi:chevron-right"
-                                />
-                            </span>
-                        </DisclosureButton>
-                        <TransitionRoot
-                            :show="open"
-                            :unmount="false"
-                            as="dd"
-                            class="p-4 pt-2 pr-12"
-                            enter="transition ease-in-out duration-200 transform opacity-0"
-                            enter-from="-translate-y-[10px] opacity-0"
-                            enter-to="translate-y-0 opacity-100"
-                            leave="transition ease-in-out duration-200 transform opacity-100"
-                            leave-from="translate-y-0 opacity-100"
-                            leave-to="-translate-y-[10px] opacity-0"
-                        >
-                            <p class="text-base text-gray-500">
-                                {{ faq.answer }}
-                            </p>
-                        </TransitionRoot>
-                    </Disclosure>
-                </dl>
+                            <DisclosureButton
+                                class="p-4 text-left w-full flex justify-between items-start text-gray-400 transition-all hover:bg-gray-100 rounded"
+                            >
+                                <span class="font-medium text-gray-900">{{ faq.question }}</span>
+                                <span class="ml-6 h-7 flex items-center">
+                                    <Icon
+                                        class="h-6 w-6 transform duration-200"
+                                        :class="open ? '-rotate-90' : 'rotate-90'"
+                                        name="mdi:chevron-right"
+                                    />
+                                </span>
+                            </DisclosureButton>
+                            <TransitionRoot
+                                :show="open"
+                                :unmount="false"
+                                as="dd"
+                                class="p-4 pt-2 pr-12"
+                                enter="transition ease-in-out duration-200 transform opacity-0"
+                                enter-from="-translate-y-[10px] opacity-0"
+                                enter-to="translate-y-0 opacity-100"
+                                leave="transition ease-in-out duration-200 transform opacity-100"
+                                leave-from="translate-y-0 opacity-100"
+                                leave-to="-translate-y-[10px] opacity-0"
+                            >
+                                <p class="text-base text-gray-500">
+                                    {{ faq.answer }}
+                                </p>
+                            </TransitionRoot>
+                        </Disclosure>
+                    </dl>
+                </ClientOnly>
             </div>
         </div>
     </section>

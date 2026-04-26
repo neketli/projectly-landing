@@ -31,6 +31,11 @@ export default defineNuxtConfig({
         indexable: true,
     },
 
+    runtimeConfig: {
+        telegramBotToken: process.env.TELEGRAM_BOT_TOKEN,
+        telegramChatId: process.env.TELEGRAM_CHAT_ID,
+    },
+
     compatibilityDate: '2024-04-03',
 
     eslint: {
