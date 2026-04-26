@@ -22,7 +22,7 @@ projectly.ru {
 }
 
 www.projectly.ru {
-handle /api/* {
+    handle /api/* {
         reverse_proxy projectly_nginx:4242
     }
 
