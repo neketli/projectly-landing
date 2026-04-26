@@ -32,14 +32,12 @@ services:
       - caddy_config:/config
     networks:
       - projectly_network
-    extra_hosts:
-      - "projectly_app:host-gateway"
     depends_on:
       - landing
 
 networks:
   projectly_network:
-    driver: bridge
+    external: true
 
 volumes:
   caddy_data:

@@ -4,17 +4,37 @@
 }
 
 projectly.ru {
-    reverse_proxy /api/* projectly_app:4242
-    reverse_proxy /media/* projectly_app:4242
-    reverse_proxy /my/* projectly_app:4242
-    reverse_proxy /my/_nuxt/* projectly_app:4242
-    reverse_proxy /* projectly_landing:3000
+    handle /api/* {
+        reverse_proxy projectly_nginx:4242
+    }
+
+    handle /media/* {
+        reverse_proxy projectly_nginx:4242
+    }
+
+    handle /my/* {
+        reverse_proxy projectly_nginx:4242
+    }
+
+    handle {
+        reverse_proxy projectly_landing:3000
+    }
 }
 
 www.projectly.ru {
-    reverse_proxy /api/* projectly_app:4242
-    reverse_proxy /media/* projectly_app:4242
-    reverse_proxy /my/* projectly_app:4242
-    reverse_proxy /my/_nuxt/* projectly_app:4242
-    reverse_proxy /* projectly_landing:3000
+handle /api/* {
+        reverse_proxy projectly_nginx:4242
+    }
+
+    handle /media/* {
+        reverse_proxy projectly_nginx:4242
+    }
+
+    handle /my/* {
+        reverse_proxy projectly_nginx:4242
+    }
+
+    handle {
+        reverse_proxy projectly_landing:3000
+    }
 }

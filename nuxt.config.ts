@@ -70,6 +70,10 @@ export default defineNuxtConfig({
         detectBrowserLanguage: false,
     },
 
+    icon: {
+        localApiEndpoint: '/_nuxt_icon',
+    },
+
     robots: {
         UserAgent: '*',
         Allow: '/',
