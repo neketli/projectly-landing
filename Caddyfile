@@ -4,6 +4,8 @@
 }
 
 projectly.ru {
+    encode gzip
+
     handle /api/* {
         reverse_proxy projectly_nginx:4242
     }
@@ -22,6 +24,8 @@ projectly.ru {
 }
 
 www.projectly.ru {
+    encode gzip
+
     handle /api/* {
         reverse_proxy projectly_nginx:4242
     }
