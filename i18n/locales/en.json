@@ -158,6 +158,15 @@
       }
     }
   },
+  "install": {
+    "section": "Installation",
+    "title": "Deploy in One Command",
+    "subtitle": "Docker Compose, Let's Encrypt, and all configuration handled automatically. Just copy the command and run it on your server.",
+    "quick_label": "Install",
+    "copy": "Copy",
+    "copied": "Copied!",
+    "note": "Options are available: e.g. pass --domain and --email to enable HTTPS. Supports Linux and macOS (dev); Docker is installed automatically."
+  },
   "contact": {
     "title": "Have Questions?",
     "subtitle": "Contact us, and we’ll get back to you shortly",

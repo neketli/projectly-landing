@@ -2,6 +2,7 @@
     <main>
         <HeroSection />
         <FeaturesSection />
+        <InstallSection />
         <HowItWorksSection />
         <DemoSection />
         <PricingSection />
